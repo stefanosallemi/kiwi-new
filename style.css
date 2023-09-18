@@ -5820,7 +5820,7 @@ body {
     margin-right: -3rem !important;
 }
 
-.k-3d {}
+.k-3d:hover {}
 
 @media screen and (max-width: 1441px) {
     .k-3d {
@@ -5844,6 +5844,15 @@ body {
         margin-left: -2rem !important;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    #top-right,
+    #top-left {
+        visibility: hidden;
+    }
+}
+
 
 @media screen and (max-width: 426px) {
     .k-3d {
