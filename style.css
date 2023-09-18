@@ -5778,3 +5778,91 @@ a {
     font-style: normal;
     font-display: swap;
 }
+
+/* CUSTOM */
+
+html,
+body {
+    touch-action: pan-x pan-y !important;
+    overflow-x: hidden !important;
+}
+
+#top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    zoom: 200%;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-image: url('img/top-left.svg');
+}
+
+#top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    zoom: 200%;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-image: url('img/top-right.svg');
+}
+
+.chi-siamo-custom {
+    padding-top: 2rem !important;
+}
+
+.face-six-custom {
+    margin-top: -3rem !important;
+    margin-right: -3rem !important;
+}
+
+.k-3d {}
+
+@media screen and (max-width: 1441px) {
+    .k-3d {
+        margin-left: -7rem !important;
+        zoom: 110%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .k-3d {
+        margin-right: -5rem !important;
+        margin-top: 1rem;
+        zoom: 90%;
+    }
+}
+
+.k-3d {}
+
+@media screen and (max-width: 769px) {
+    .k-3d {
+        margin-left: -2rem !important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .k-3d {
+        margin-left: 3rem !important;
+        padding-left: 4rem;
+        zoom: 100%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .k-3d {
+        margin-left: -8rem !important;
+        zoom: 60%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .k-3d {
+        margin-left: -8rem !important;
+        zoom: 50%;
+    }
+}
