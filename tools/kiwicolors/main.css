@@ -97,10 +97,12 @@ button, input {
 }
 
 input{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	mix-blend-mode: color-burn;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.548);
+	filter: invert(50%);
+	filter: brightness(50%);
+	filter: contrast(10%);
+	filter: blur(100%);
 	border-radius: 5rem;
 	-webkit-border-radius: 5rem;
 	-moz-border-radius: 5rem;
@@ -110,6 +112,8 @@ input{
 	padding-bottom: 0.5rem;
 	margin-left: -4rem;
 	margin-right: -4rem;
+	-webkit-filter: brightness(50%);
+	font-weight: bold;
 }
 
 button {
