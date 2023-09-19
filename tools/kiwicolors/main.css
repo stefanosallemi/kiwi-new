@@ -12,9 +12,10 @@
 	box-sizing: border-box;
 }
 
-html{
+html {
 	overflow-y: hidden;
 }
+
 body {
 	background-color: var(--light);
 }
@@ -30,14 +31,14 @@ h1 {
 	text-transform: uppercase;
 	margin-bottom: 1rem;
 	margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    font-family: 'Humane Medium', sans-serif;
-    font-size: 4.8rem;
-    line-height: 0.8;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	font-family: 'Humane Medium', sans-serif;
+	font-size: 4.8rem;
+	line-height: 0.8;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 p {
@@ -80,15 +81,16 @@ h4 {
 	border: 2px solid white;
 }
 
-.button-generator-fixed{
+.button-generator-fixed {
 	position: fixed;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	margin-bottom: -1rem;
 }
 
-button, input {
+button,
+input {
 	appearance: none;
 	background: none;
 	border: none;
@@ -96,13 +98,10 @@ button, input {
 	color: inherit;
 }
 
-input{
+input {
 	font-size: 1.2rem;
-	mix-blend-mode: color-burn;
-	filter: invert(50%);
-	filter: brightness(50%);
-	filter: contrast(10%);
-	filter: blur(100%);
+	color: white;
+	background-color: #1c1c1c6c;
 	border-radius: 5rem;
 	-webkit-border-radius: 5rem;
 	-moz-border-radius: 5rem;
@@ -112,7 +111,6 @@ input{
 	padding-bottom: 0.5rem;
 	margin-left: -4rem;
 	margin-right: -4rem;
-	-webkit-filter: brightness(50%);
 	font-weight: bold;
 }
 
@@ -138,7 +136,8 @@ button {
 	.colours {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	main{
+
+	main {
 		margin: 5rem;
 	}
 }
@@ -148,6 +147,9 @@ button {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
+	.copy-hex{
+		font-size: 1rem;
+	}
 	.colour {
 		flex-direction: column;
 		align-items: center;
