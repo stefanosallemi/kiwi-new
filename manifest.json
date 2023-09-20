@@ -5,8 +5,8 @@
   "background_color": "#b3eb16",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/kiwi-new",
-  "start_url": "/kiwi-new",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
