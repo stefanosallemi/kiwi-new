@@ -5779,6 +5779,39 @@ body {
     }
 }
 
+.pwa-popup {
+    position: fixed;
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: #1c1c1c 10px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20rem; /* Inizialmente posiziona l'elemento fuori dalla schermata */
+    z-index: 99;
+    background-color: white;
+    transition: bottom 0.3s ease; /* Aggiungi una transizione su 'bottom' */
+}
+
+.apple-share-icon{
+    padding: 0.2rem;
+    width: 3rem;
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+}
+
+.top-right-button {
+    position: absolute;
+    margin-right: -3px;
+    top: 10px;
+    right: 10px;
+    zoom: 150%;
+    background: none;
+    border-radius: 3rem;
+  }
 
 /* CURSOR */
 /* 
@@ -5786,7 +5819,7 @@ html {
     cursor: url('img/eye-cursor.png'), auto !important;
 }
  */
- #mouse-circle {
+#mouse-circle {
     position: absolute;
     width: 3.5rem;
     height: 3.5rem;
@@ -5799,7 +5832,7 @@ html {
     box-shadow: 0 0 16px rgba(255, 255, 255, 0);
     z-index: 999999;
 }
-  
+
 @media screen and (max-width: 769px) {
     #mouse-circle {
         display: none;
