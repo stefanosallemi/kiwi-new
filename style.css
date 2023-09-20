@@ -5800,7 +5800,19 @@ body {
         zoom: 100%;
     }
 }
-
+@media screen and (width: 425px) {
+    .k-3d {
+        margin-left: -11rem !important;
+        zoom: 70%;
+    }
+}
+@media screen and (max-width: 423px) {
+    .k-3d {
+        margin-left: -8rem !important;
+        zoom: 60%;
+        margin-bottom: 2rem;
+    }
+}
 @media screen and (max-width: 376px) {
     .k-3d {
         margin-left: -8rem !important;
@@ -5878,6 +5890,13 @@ body {
         zoom: 50%;
         margin-bottom: 2rem;
     }
+}
+
+
+
+spline-viewer{
+    overflow: visible;
+    overflow-x: hidden;
 }
 
 /* CURSOR */
