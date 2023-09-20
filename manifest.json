@@ -5,8 +5,8 @@
   "background_color": "#b3eb16",
   "display": "fullScreen",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/kiwi-new",
+  "start_url": "/kiwi-new",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
