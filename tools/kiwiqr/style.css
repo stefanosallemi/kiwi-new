@@ -44,7 +44,24 @@ h1 {
   border-radius: 3rem;
   box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
   width: 23rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper{
+    margin-top: 0rem;
+    margin-left: 10rem;
+  }
+
+  .description{
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .wrapper{
+    margin-top: 0rem;
+  }
 }
 #userInput {
   width: 100%;
@@ -152,7 +169,7 @@ select option {
 
   .wrapper{
     zoom: 110%;
-    margin-top: -1rem;
+    margin-bottom: -1rem;
   }
 }
 

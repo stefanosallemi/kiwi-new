@@ -65,8 +65,8 @@ userInput.addEventListener("input", () => {
 
 window.onload = () => {
   container.innerHTML = "";
-  sizeChoice = 300;
-  sizeOptions.value = 300;
+  sizeChoice = 200;
+  sizeOptions.value = 200;
   userInput.value = "";
   BGColor.vavlue = BGColorChoice = "#fff";
   FGColor.value = FGColorChoice = "#5546ff";
