@@ -1663,7 +1663,7 @@
       </div>
     </section>
   </div>
-  
+
   <div id="notification-div" class="pwa-popup">
     <div>
       <h2>Installa l'app!</h2>
@@ -1718,19 +1718,21 @@
       if (userChoice === 'dismissed') {
         // L'utente ha scelto di ignorare la notifica, nascondi il div
         document.getElementById('notification-div').style.display = 'none';
+      }
     }
-  }
     // Funzione per mostrare il div dopo 3 secondi
     function showNotificationDiv() {
-  setTimeout(() => {
-    const userChoice = localStorage.getItem('pwaChoice');
-    if (!userChoice) {
-      const notificationDiv = document.getElementById('notification-div');
-      notificationDiv.style.display = 'block';
-      notificationDiv.style.bottom = '2rem'; // Imposta 'bottom' a 2rem
+      setTimeout(() => {
+        const userChoice = localStorage.getItem('pwaChoice');
+        const isPWAInstalled = window.matchMedia('(display-mode: standalone)').matches;
+
+        if (!userChoice && !isPWAInstalled) {
+          const notificationDiv = document.getElementById('notification-div');
+          notificationDiv.style.display = 'block';
+          notificationDiv.style.bottom = '2rem'; // Imposta 'bottom' a 2rem
+        }
+      }, 20000);
     }
-  }, 30000);
-}
 
     // Funzione chiamata quando l'utente fa clic su "Chiudi"
     function dismissNotification() {

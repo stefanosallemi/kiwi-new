@@ -3,7 +3,7 @@
   "short_name": "KiwiVision",
   "theme_color": "#5546ff",
   "background_color": "#b3eb16",
-  "display": "fullScreen",
+  "display": "standalone",
   "orientation": "portrait",
   "scope": "/kiwi-new",
   "start_url": "/kiwi-new",
