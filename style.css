@@ -5924,3 +5924,10 @@ html {
         display: none;
     }
 }
+
+.scroll-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
