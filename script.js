@@ -30,6 +30,8 @@ function checkUserChoice() {
     if (userChoice === 'dismissed') {
         // L'utente ha scelto di ignorare la notifica, nascondi il div
         document.getElementById('notification-div').style.display = 'none';
+    } else {
+        document.getElementById('notification-div').style.display = 'visible';
     }
 }
 // Funzione per mostrare il div dopo 3 secondi
@@ -136,3 +138,24 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     }
     delayMouseFollow();
 }
+
+
+// Funzione per mostrare il popup
+function mostraPopup() {
+    var popupForms = document.getElementsByClassName("pop-up-form");
+    if (popupForms.length > 0) {
+        popupForms[0].style.display = "flex";
+    }
+}
+
+// Funzione per chiudere il popup
+function chiudiPopup() {
+    var popupForms = document.getElementsByClassName("pop-up-form");
+    if (popupForms.length > 0) {
+        var popup = popupForms[0];
+        popup.setAttribute("style", "/* display: flex; */");
+    }
+}
+
+// Aggiungi un evento al click del bottone per mostrare il popup
+document.getElementById("team-popup").addEventListener("click", mostraPopup);

@@ -5758,7 +5758,7 @@ body {
         box-shadow: #1c1c1c 10px 10px;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -20rem;
+        bottom: -30rem;
         /* Inizialmente posiziona l'elemento fuori dalla schermata */
         z-index: 99;
         background-color: white;
@@ -5784,6 +5784,18 @@ body {
     }
 }
 
+@media screen and (min-width: 770px) {
+
+    .pwa-popup,
+    .top-right-button,
+    .apple-share-icon,
+    .popup-h2,
+    .popup-p,
+    .top-right-button {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     #top-right,
@@ -5800,12 +5812,14 @@ body {
         zoom: 100%;
     }
 }
+
 @media screen and (width: 425px) {
     .k-3d {
         margin-left: -11rem !important;
         zoom: 70%;
     }
 }
+
 @media screen and (max-width: 423px) {
     .k-3d {
         margin-left: -8rem !important;
@@ -5813,6 +5827,7 @@ body {
         margin-bottom: 2rem;
     }
 }
+
 @media screen and (max-width: 376px) {
     .k-3d {
         margin-left: -8rem !important;
@@ -5894,7 +5909,7 @@ body {
 
 
 
-spline-viewer{
+spline-viewer {
     overflow: visible;
     overflow-x: hidden;
 }
