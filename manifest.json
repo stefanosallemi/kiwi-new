@@ -7,6 +7,9 @@
   "orientation": "portrait",
   "scope": "/home",
   "start_url": "/home",
+  "browser": {
+    "enabled": false
+  },
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
