@@ -4153,6 +4153,7 @@ a {
     width: 70rem;
     margin-right: auto;
     margin-left: auto;
+    z-index: -1;
 }
 
 .section-medium {
