@@ -200,3 +200,20 @@ function includeNavbar() {
 
 // Chiama la funzione per includere la navbar quando la pagina è pronta
 document.addEventListener("DOMContentLoaded", includeNavbar);
+
+
+function nascondiPopup() {
+    var popup = document.getElementById('cos-e-popup');
+    popup.style.opacity = '0';
+    setTimeout(function() {
+      popup.style.display = 'none';
+    }, 2000);
+  }
+
+  function mostraPopup() {
+    var popup = document.getElementById('cos-e-popup');
+    popup.style.display = 'block';
+    setTimeout(function() {
+      popup.style.opacity = '1';
+    }, 0);
+  }
