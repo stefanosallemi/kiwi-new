@@ -159,3 +159,44 @@ function chiudiPopup() {
 
 // Aggiungi un evento al click del bottone per mostrare il popup
 document.getElementById("team-popup").addEventListener("click", mostraPopup);
+
+
+window.onload = function () {
+
+    var pageTitle = document.title;
+    var attentionMessage = 'Torna qui!😭';
+
+    document.addEventListener('visibilitychange', function (e) {
+        var isPageActive = !document.hidden;
+
+        if (!isPageActive) {
+            document.title = attentionMessage;
+        } else {
+            document.title = pageTitle;
+        }
+    });
+};
+
+
+// Funzione per caricare e inserire la navbar
+function includeNavbar() {
+    // Crea una nuova richiesta HTTP
+    var xhr = new XMLHttpRequest();
+
+    // Specifica il metodo HTTP e l'URL del file navbar.html
+    xhr.open("GET", "/sections/navbar.html", true);
+
+    // Gestisci l'evento di caricamento della risorsa
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            // Se la richiesta è stata completata con successo, inserisci il contenuto nel tuo elemento div
+            document.getElementById("navbar-container").innerHTML = xhr.responseText;
+        }
+    };
+
+    // Invia la richiesta
+    xhr.send();
+}
+
+// Chiama la funzione per includere la navbar quando la pagina è pronta
+document.addEventListener("DOMContentLoaded", includeNavbar);
